@@ -1,15 +1,18 @@
 #include "monty.h"
-bus_t bus = {NULL, NULL, NULL, 0};
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
+bus_t bus = {NULL, NULL, NULL, 0};
 /**
 * main - monty code interpreter
+* getline - getß a line
 * @argc: number of arguments
 * @argv: monty file location
 * Return: 0 on success
 */
-
 int main(int argc, char *argv[])
-
+{
 	char *content;
 	FILE *file;
 	size_t size = 0;
